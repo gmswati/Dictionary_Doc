@@ -2,6 +2,8 @@
 list=[1,2,3,4]
 # Sample output:
 # {1: {2: {3: {4: {}}}}}
+
+# Method - 1:
 list=[1,2,3,4]
 new_d=dict={}
 for i in list:
@@ -9,6 +11,12 @@ for i in list:
     dict=dict[i]
 print(new_d)
 
+# Method - 2:
+num=[1,2,3,4]
+h={}
+for i in range(1,len(num)+1):
+    h=([num[-i]:h])
+print(h)
 
 
 
